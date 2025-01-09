@@ -1,0 +1,207 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[12pt]{article}
+\usepackage{epsfig}
+\usepackage{times}
+\usepackage{fancyhdr}
+\usepackage{pslatex}
+\usepackage{amsmath}
+\usepackage{mathrsfs}
+\usepackage[dvipsnames]{xcolor}
+\usepackage[hidelinks]{hyperref}%renewcommand{\topfraction}{1.0}
+\renewcommand{\topfraction}{1.0}
+\renewcommand{\bottomfraction}{1.0}
+\renewcommand{\textfraction}{0.0}
+\setlength {\textwidth}{6.6in}
+\hoffset=-1.0in
+\oddsidemargin=1.00in
+\marginparsep=0.0in
+\marginparwidth=0.0in                                                                               
+\setlength {\textheight}{9.0in}
+\voffset=-1.00in
+\topmargin=1.0in
+\headheight=0.0in
+\headsep=0.00in
+\footskip=0.50in                                         
+\setcounter{page}{1}
+\begin{document}
+\def\pos{\medskip\quad}
+\def\subpos{\smallskip \qquad}
+\newfont{\nice}{cmr12 scaled 1250}
+\newfont{\name}{cmr12 scaled 1080}
+\newfont{\swell}{cmbx12 scaled 800}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     DO NOT CHANGE ANYTHING ABOVE THIS LINE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     DO NOT CHANGE ANYTHING ABOVE THIS LINE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     DO NOT CHANGE ANYTHING ABOVE THIS LINE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{center}
+{\large
+PHYSICS  X0323: Scientific Analysis \& Modeling - Fall 2024
+}\\
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+{\large Project: Anahi Covarrubias }\\\vskip0.25in
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{center}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Section Heading
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\noindent {\bf PROJECT INFORMATION:} \\
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Section Heading
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vskip0.1in
+\noindent {\bf PURPOSE:} \\
+
+ Analyzing the radioactive decay of elements and modeling the decay and energy created from this process. The elements used were:
+
+%You can use superscripts (m s$^{-1}$) or subscripts (M$_{*}$). 
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Bullet Point & Numbered list - lists can also be nested as below
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{itemize}      % first begin-----------]
+\item Radon         %                                          
+\end{itemize}        %           third end --]  
+\begin{itemize}
+\item Polonium         %                                %      fourth begin ----]   %         fifth begin  -]  %              
+\end{itemize}        %       fourth end------] 
+\begin{itemize}
+\item Lead $^{214}$         %                         
+\end{itemize}        % first end ------------]
+\begin{itemize}
+    \item Bismuth
+\end{itemize}
+\begin{itemize}
+    \item Thallium
+\end{itemize}
+\begin{itemize}
+    \item Lead $^{207}$
+\end{itemize}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Section Heading
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vskip0.1in
+\noindent {\bf PROCEDURE:} \\
+
+My procedure for this project was to start from the bottom with Lead $^{207}$, and work my way up the ladder. For example, I examined the decay of Bismuth, 87\% of it turns into Lead $^{207}$, while 13\% of it turns into Thallium. Then, I broke down each decay time into seconds by multiplying the given minutes by 60, representing 60 seconds, but for Radon, I multiplied its given time, 3,82 days, by 24 hours, 60 minutes, and 60 seconds. Thirdly, I produced half-life equations for all the elements. 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\clearpage % inserts a page break
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%You can also use figures:
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.5\linewidth]{decay1.png}
+    \caption{This is the decay of 20,000  atoms in 2 minutes}
+    \label{fig:enter-label}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.5\linewidth]{decay2.png}
+    \caption{This is the energy created from the 4 types of decay processes.}
+    \label{fig:enter-label}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Figures can be inserted
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{figure}[h!]
+%\begin{center}
+%\epsfig{file=hydrogen.eps,width=2.2in}
+%\end{center}
+%\caption{This is the energy levels for the Hydrogen atom}
+%\end{figure}
+%\begin{figure}[h]
+%\begin{center}
+%\includegraphics[scale=0.6,angle=90]{hydrogen.eps} 
+%\end{center}
+%\caption{This is the energy levels for the Hydrogen atom sideways
+%\label{figure:map}}
+%\end{figure}
+
+
+\noindent {\bf ANALYSIS (and math):} \\
+
+%And go into Math mode $A_x = \int_{n-1}^{n+10}  f(x) \mathrm{d}x$ 
+%in the normal text or insert an equation:
+%\begin{equation}
+%	F = ma \\
+%	   =m \frac{dv}{dt} 
+%\end{equation}
+\begin{equation}
+    N(t) = N(0) 2^{-t/\tau}
+    \label{eq:placeholder_label}
+\end{equation}
+\begin{equation}
+    p(t) = 1 - 2^{-t/\tau}
+    \label{eq:placeholder_label}
+\end{equation}
+\begin{equation}
+    x = \frac{1}{\mu} \ln(1 - z)
+    \label{placeholder}
+\end{equation}
+%or if you want to go wild:
+%\begin{equation}
+%\prod_{j\ge0}\left( \sum_{k\ge0} a_{jk}z^k \right) = %\sum_{n\ge0} z^n 
+%\left( \sum_{k_0,k_1\ldots\ge0 \atop k_0+k_1\cdots=0} a_{0k_0} %a_{1k_1}\ldots \right)
+%\end{equation}
+%and continue your text.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Section Heading
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vskip0.1in
+\noindent {\bf RESULTS:}\\
+
+The following graph outlines the results from the average and standard deviations of individual and total decay energies produced.  %You can also use tables to display your data.\\
+
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Tables are created easily
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{center}
+\begin{tabular}{|l|crrrr|}\hline\hline
+Alpha energy & Beta Energy & R Energy & Z Energy & Total Energy &\\\hline\hline
+Avg. Alpha- 110780.05   & Avg.Beta- 1488.4  &  Avg. R- 73896.0 & Avg. Z- 239556.0 & Avg. Total- 425720.0 &  \\
+  STD A- 293.696 & STD B- 15.132  &  STD R- 59.484 & STD Z- 48.0 & STD Total- 291.682 &   \\
+ \\\hline
+\end{tabular}\vskip 0.2in
+\end{center}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Section Heading
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vskip0.1in
+\noindent {\bf CONCLUSION:}\\
+
+In conclusion, a shield of about 63.81 cm would be needed to safely block all alpha energy, and the amount of energy needed to block up to 3-sigma is, 111661.58753821626.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\end{document}
